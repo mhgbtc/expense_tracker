@@ -11,8 +11,16 @@ class Expenses extends StatefulWidget {
 
 class _ExpensesState extends State<Expenses> {
   final List<Expense> _registeredExpenses = [
-    Expense(title: 'Flutter course', amount: 13.99, date: DateTime.now(), category: Category.work),
-    Expense(title: 'Cinema', amount: 15.69, date: DateTime.now(), category: Category.leisure)
+    Expense(
+        title: 'Flutter course',
+        amount: 13.99,
+        date: DateTime.now(),
+        category: Category.work),
+    Expense(
+        title: 'Cinema',
+        amount: 15.69,
+        date: DateTime.now(),
+        category: Category.leisure)
   ];
 
   @override
@@ -21,7 +29,6 @@ class _ExpensesState extends State<Expenses> {
       body: Column(
         children: [
           Text("The chart"),
-          Text('The expenses list...'),
         ],
       ),
     );
